@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list_bloc_cubit/todo_list.dart';
+
+import 'add_todo_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +19,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       initialRoute: '/',
-      routes: {'/': () => const TodoList(), '/add-todo': (_)=>const AddTodoPage(),},
+      routes: {
+        '/': (_) => const TodoList(),
+        '/add-todo': (_) => const AddTodoPage(),
+      },
     );
   }
 }
