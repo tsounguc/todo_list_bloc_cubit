@@ -4,7 +4,6 @@ import 'package:todo_list_bloc_cubit/todo_list.dart';
 
 import 'add_todo_page.dart';
 import 'cubit/todo_cubit.dart';
-import 'models/todo_model.dart';
 
 void main() {
   runApp(const MyApp());
