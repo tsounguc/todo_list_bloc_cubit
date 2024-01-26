@@ -29,6 +29,7 @@ class _AddTodoPageState extends State<AddTodoPage> {
               onPressed: () {
                 BlocProvider.of<TodoCubit>(context)
                     .addTodo(toolTitleController.text.trim());
+                Navigator.pop(context);
               },
               child: const Text('Add'),
             ),
