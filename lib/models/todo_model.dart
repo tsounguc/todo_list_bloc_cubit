@@ -6,4 +6,6 @@ class Todo {
     required this.createdAt,
   });
 
+  @override
+  String toString() => 'Todo(todo: $todo, createdAt: $createdAt)';
 }
